@@ -8,8 +8,10 @@ class ChannelList extends Component {
             <ul>{
                 this.props.channels.map(channel => {
                     return (
-                        <Channel channel={channel} setChannel={this.props.setChannel} key={channel.id}
-                                 name={channel.name}/>);
+                        <Channel channel={channel}
+                                 key={channel.id}
+                                 {...this.props}
+                        />);
                 })
             }
             </ul>
@@ -19,7 +21,8 @@ class ChannelList extends Component {
 
 ChannelList.propTypes = {
     channels: React.PropTypes.array.isRequired,
-    setChannel: React.PropTypes.func.isRequired
+    setChannel: React.PropTypes.func.isRequired,
+    activeChannel: React.PropTypes.object.isRequired
 };
 
 export default ChannelList;
