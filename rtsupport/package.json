@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "babel-loader": "^6.4.0",
+    "eslint": "^3.17.1",
+    "eslint-plugin-react": "^6.10.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
