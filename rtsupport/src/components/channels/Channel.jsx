@@ -19,7 +19,6 @@ class Channel extends Component {
                 </a>
             </li>
         );
-
     }
 }
 
